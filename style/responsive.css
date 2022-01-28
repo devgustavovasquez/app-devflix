@@ -1,0 +1,36 @@
+@media screen and (max-width: 780px) {
+  :root {
+    --myfontsize: 1vw;
+  }
+
+  header .logo {
+    margin: 0;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  header div.container {
+    margin: 0;
+  }
+
+  button {
+    margin-bottom: 8px;
+  }
+
+  .filme-principal .container {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 650px;
+  }
+}

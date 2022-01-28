@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap');
+
+:root {
+  --myred: #e50914;
+  --myblack: #141414;
+  --mywhite: #e5e5e5;
+  --myfontsize: 0.6vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font: 700 calc(var(--myfontsize) * 2) 'Maven Pro', sans-serif;
+  color: #fff;
+}
+
+body {
+  background: var(--myblack);
+}
+
+.container {
+  margin-left: 20px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+header .logo {
+  margin: 20px 0;
+  color: var(--myred);
+  font-size: 40px;
+}
+
+nav {
+  margin-right: 70px;
+}
+
+nav a {
+  color: var(--mywhite);
+
+  margin: 0 20px;
+
+  transition: 0.2s ease all;
+}
+
+nav a:hover {
+  color: #5f5c5b;
+}
+
+.filme-principal {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('../img/capa-destaque.jpg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .container {
+  width: 60%;
+}
+
+.titulo {
+  font-size: calc(var(--myfontsize) * 6.4);
+  margin-bottom: 5px;
+}
+
+.descricao {
+  margin-bottom: 50px;
+  font-weight: 400;
+}
+
+button {
+  padding: 10px 14px;
+
+  border: none;
+  border-radius: 2px;
+
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+
+  transition: 0.2s ease all;
+}
+
+.botao-assistir i {
+  color: #141414;
+  margin-right: 5px;
+}
+
+.botao-info i {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.botao-assistir {
+  color: black;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.botao-assistir:hover {
+  background-color: rgba(255, 255, 255, 70%);
+}
+
+.botao-info {
+  background-color: rgba(109, 109, 110, 0.7);
+}
+
+.botao-info:hover {
+  background-color: rgba(109, 109, 110, 0.5);
+}
+
+h3.categoria {
+  margin-top: 10px;
+
+  color: var(--mywhite);
+  font-size: 16px;
+  letter-spacing: 00.03rem;
+
+  cursor: pointer;
+
+  transition: 0.2s ease all;
+}
+
+h3.categoria:hover {
+  color: #fff;
+}
+
+.box-filme {
+  margin-top: 10px;
+
+  display: block;
+
+  max-height: 400px;
+  cursor: pointer;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  display: none;
+}
